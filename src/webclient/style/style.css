@@ -1,0 +1,58 @@
+.container {
+  text-align: center;
+}
+
+.player-selection {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+  
+.player {
+  width: 250px;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-size: 23px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.player.selected {
+  border-bottom: 2px solid #14bdac;
+  border-bottom-width: 2px;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.status-bar {
+  text-align: center;
+  font-size: 20px;
+  color: #666;
+}
+
+.canvas-container {
+  height: 350px;
+  background-color: #14bdac;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+canvas {
+  width: 300px;
+  height: 300px;
+  margin-top: 5px;
+  background-color: #14bdac;
+}
+
+.restart-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 20px;
+  color: #14bdac;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}

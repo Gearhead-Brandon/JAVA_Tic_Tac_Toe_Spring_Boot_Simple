@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+  <script defer src="script/index.js" type="module"></script>
+
+  <div class="container">
+
+    <div class="player-selection">
+      <button class="player selected" id="playerX">X</button>
+      <button class="player" id="playerO">O</button>
+    </div>
+
+    <p class="status-bar" id="statusBar">Start game or select player</p>
+
+    <div class="canvas-container">
+      <canvas class="board" id="myCanvas" width="300" height="300"></canvas>
+    </div>
+
+    <button class="restart-button" id="restartButton">Restart</button>
+    
+  </div>
+
+</body>
+</html>

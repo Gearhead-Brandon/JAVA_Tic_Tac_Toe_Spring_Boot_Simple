@@ -1,0 +1,1082 @@
+2025-01-10T21:49:24.773Z  INFO 22137 --- [restartedMain] g.t.application.TicTacToeApplication     : Starting TicTacToeApplication using Java 23.0.1 with PID 22137 (/home/gearhead/Projects/new_bootcamp/AP1_Jv_T03-1/src/TicTacToe/build/classes/java/main started by gearhead in /home/gearhead/Projects/new_bootcamp/AP1_Jv_T03-1/src/TicTacToe)
+2025-01-10T21:49:24.777Z  INFO 22137 --- [restartedMain] g.t.application.TicTacToeApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-01-10T21:49:24.824Z  INFO 22137 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-10T21:49:24.824Z  INFO 22137 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-10T21:49:25.638Z  INFO 22137 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-01-10T21:49:25.650Z  INFO 22137 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-10T21:49:25.651Z  INFO 22137 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-01-10T21:49:25.680Z  INFO 22137 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-10T21:49:25.680Z  INFO 22137 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 855 ms
+2025-01-10T21:49:25.734Z  WARN 22137 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'gameRepositoryImpl' defined in file [/home/gearhead/Projects/new_bootcamp/AP1_Jv_T03-1/src/TicTacToe/build/classes/java/main/game/tictactoe/datasource/repository/impl/GameRepositoryImpl.class]: Unsatisfied dependency expressed through constructor parameter 1: No qualifying bean of type 'game.tictactoe.datasource.mapper.GameMapper' available: expected single matching bean but found 2: gameMapperImpl,getGameMapperInstance
+2025-01-10T21:49:25.737Z  INFO 22137 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-01-10T21:49:25.749Z  INFO 22137 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-01-10T21:49:25.768Z ERROR 22137 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in game.tictactoe.datasource.repository.impl.GameRepositoryImpl required a single bean, but 2 were found:
+	- gameMapperImpl: defined in file [/home/gearhead/Projects/new_bootcamp/AP1_Jv_T03-1/src/TicTacToe/build/classes/java/main/game/tictactoe/datasource/mapper/GameMapperImpl.class]
+	- getGameMapperInstance: defined by method 'getGameMapperInstance' in class path resource [game/tictactoe/configuration/TicTacToeConfig.class]
+
+This may be due to missing parameter name information
+
+Action:
+
+Consider marking one of the beans as @Primary, updating the consumer to accept multiple beans, or using @Qualifier to identify the bean that should be consumed
+
+Ensure that your compiler is configured to use the '-parameters' flag.
+You may need to update both your build tool settings as well as your IDE.
+(See https://github.com/spring-projects/spring-framework/wiki/Upgrading-to-Spring-Framework-6.x#parameter-name-retention)
+
+
+2025-01-10T21:50:53.335Z  INFO 22472 --- [restartedMain] g.t.application.TicTacToeApplication     : Starting TicTacToeApplication using Java 23.0.1 with PID 22472 (/home/gearhead/Projects/new_bootcamp/AP1_Jv_T03-1/src/TicTacToe/build/classes/java/main started by gearhead in /home/gearhead/Projects/new_bootcamp/AP1_Jv_T03-1/src/TicTacToe)
+2025-01-10T21:50:53.337Z  INFO 22472 --- [restartedMain] g.t.application.TicTacToeApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-01-10T21:50:53.387Z  INFO 22472 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-10T21:50:53.387Z  INFO 22472 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-10T21:50:54.444Z  INFO 22472 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-01-10T21:50:54.457Z  INFO 22472 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-10T21:50:54.457Z  INFO 22472 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-01-10T21:50:54.488Z  INFO 22472 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-10T21:50:54.489Z  INFO 22472 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1101 ms
+2025-01-10T21:50:54.566Z  WARN 22472 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'gameRepositoryImpl' defined in file [/home/gearhead/Projects/new_bootcamp/AP1_Jv_T03-1/src/TicTacToe/build/classes/java/main/game/tictactoe/datasource/repository/impl/GameRepositoryImpl.class]: Unsatisfied dependency expressed through constructor parameter 1: No qualifying bean of type 'game.tictactoe.datasource.mapper.GameMapper' available: expected single matching bean but found 2: gameMapperImpl,getGameMapperImpl
+2025-01-10T21:50:54.568Z  INFO 22472 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-01-10T21:50:54.586Z  INFO 22472 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-01-10T21:50:54.603Z ERROR 22472 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in game.tictactoe.datasource.repository.impl.GameRepositoryImpl required a single bean, but 2 were found:
+	- gameMapperImpl: defined in file [/home/gearhead/Projects/new_bootcamp/AP1_Jv_T03-1/src/TicTacToe/build/classes/java/main/game/tictactoe/datasource/mapper/GameMapperImpl.class]
+	- getGameMapperImpl: defined by method 'getGameMapperImpl' in class path resource [game/tictactoe/configuration/TicTacToeConfig.class]
+
+This may be due to missing parameter name information
+
+Action:
+
+Consider marking one of the beans as @Primary, updating the consumer to accept multiple beans, or using @Qualifier to identify the bean that should be consumed
+
+Ensure that your compiler is configured to use the '-parameters' flag.
+You may need to update both your build tool settings as well as your IDE.
+(See https://github.com/spring-projects/spring-framework/wiki/Upgrading-to-Spring-Framework-6.x#parameter-name-retention)
+
+
+2025-01-10T21:51:51.234Z  INFO 22782 --- [restartedMain] g.t.application.TicTacToeApplication     : Starting TicTacToeApplication using Java 23.0.1 with PID 22782 (/home/gearhead/Projects/new_bootcamp/AP1_Jv_T03-1/src/TicTacToe/build/classes/java/main started by gearhead in /home/gearhead/Projects/new_bootcamp/AP1_Jv_T03-1/src/TicTacToe)
+2025-01-10T21:51:51.237Z  INFO 22782 --- [restartedMain] g.t.application.TicTacToeApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-01-10T21:51:51.285Z  INFO 22782 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-10T21:51:51.285Z  INFO 22782 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-10T21:51:52.083Z  INFO 22782 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-01-10T21:51:52.094Z  INFO 22782 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-10T21:51:52.095Z  INFO 22782 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-01-10T21:51:52.124Z  INFO 22782 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-10T21:51:52.124Z  INFO 22782 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 838 ms
+2025-01-10T21:51:52.170Z  WARN 22782 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'gameRepositoryImpl' defined in file [/home/gearhead/Projects/new_bootcamp/AP1_Jv_T03-1/src/TicTacToe/build/classes/java/main/game/tictactoe/datasource/repository/impl/GameRepositoryImpl.class]: Unsatisfied dependency expressed through constructor parameter 1: No qualifying bean of type 'game.tictactoe.datasource.mapper.GameMapper' available: expected single matching bean but found 2: gameMapperImpl,getGameMapperImpl
+2025-01-10T21:51:52.172Z  INFO 22782 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-01-10T21:51:52.183Z  INFO 22782 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-01-10T21:51:52.197Z ERROR 22782 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in game.tictactoe.datasource.repository.impl.GameRepositoryImpl required a single bean, but 2 were found:
+	- gameMapperImpl: defined in file [/home/gearhead/Projects/new_bootcamp/AP1_Jv_T03-1/src/TicTacToe/build/classes/java/main/game/tictactoe/datasource/mapper/GameMapperImpl.class]
+	- getGameMapperImpl: defined by method 'getGameMapperImpl' in class path resource [game/tictactoe/configuration/TicTacToeConfig.class]
+
+This may be due to missing parameter name information
+
+Action:
+
+Consider marking one of the beans as @Primary, updating the consumer to accept multiple beans, or using @Qualifier to identify the bean that should be consumed
+
+Ensure that your compiler is configured to use the '-parameters' flag.
+You may need to update both your build tool settings as well as your IDE.
+(See https://github.com/spring-projects/spring-framework/wiki/Upgrading-to-Spring-Framework-6.x#parameter-name-retention)
+
+
+2025-01-10T21:52:58.940Z  INFO 23030 --- [restartedMain] g.t.application.TicTacToeApplication     : Starting TicTacToeApplication using Java 23.0.1 with PID 23030 (/home/gearhead/Projects/new_bootcamp/AP1_Jv_T03-1/src/TicTacToe/build/classes/java/main started by gearhead in /home/gearhead/Projects/new_bootcamp/AP1_Jv_T03-1/src/TicTacToe)
+2025-01-10T21:52:58.941Z  INFO 23030 --- [restartedMain] g.t.application.TicTacToeApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-01-10T21:52:59.074Z  INFO 23030 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-10T21:52:59.075Z  INFO 23030 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-10T21:52:59.663Z  WARN 23030 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'gameMapperImpl' defined in class path resource [game/tictactoe/configuration/TicTacToeConfig.class]: Cannot register bean definition [Root bean: class=null; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=ticTacToeConfig; factoryMethodName=gameMapperImpl; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [game/tictactoe/configuration/TicTacToeConfig.class]] for bean 'gameMapperImpl' since there is already [Generic bean: class=game.tictactoe.datasource.mapper.GameMapperImpl; scope=singleton; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null; defined in file [/home/gearhead/Projects/new_bootcamp/AP1_Jv_T03-1/src/TicTacToe/build/classes/java/main/game/tictactoe/datasource/mapper/GameMapperImpl.class]] bound.
+2025-01-10T21:52:59.670Z  INFO 23030 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-01-10T21:52:59.728Z ERROR 23030 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'gameMapperImpl', defined in class path resource [game/tictactoe/configuration/TicTacToeConfig.class], could not be registered. A bean with that name has already been defined in file [/home/gearhead/Projects/new_bootcamp/AP1_Jv_T03-1/src/TicTacToe/build/classes/java/main/game/tictactoe/datasource/mapper/GameMapperImpl.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2025-01-10T21:54:02.071Z  INFO 23332 --- [restartedMain] g.t.application.TicTacToeApplication     : Starting TicTacToeApplication using Java 23.0.1 with PID 23332 (/home/gearhead/Projects/new_bootcamp/AP1_Jv_T03-1/src/TicTacToe/build/classes/java/main started by gearhead in /home/gearhead/Projects/new_bootcamp/AP1_Jv_T03-1/src/TicTacToe)
+2025-01-10T21:54:02.075Z  INFO 23332 --- [restartedMain] g.t.application.TicTacToeApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-01-10T21:54:02.127Z  INFO 23332 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-10T21:54:02.127Z  INFO 23332 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-10T21:54:03.021Z  INFO 23332 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-01-10T21:54:03.033Z  INFO 23332 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-10T21:54:03.033Z  INFO 23332 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-01-10T21:54:03.067Z  INFO 23332 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-10T21:54:03.067Z  INFO 23332 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 936 ms
+2025-01-10T21:54:03.118Z  WARN 23332 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'gameServiceImpl' defined in file [/home/gearhead/Projects/new_bootcamp/AP1_Jv_T03-1/src/TicTacToe/build/classes/java/main/game/tictactoe/domain/service/gameService/impl/GameServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'game.tictactoe.domain.service.minimax.MinimaxService' available: expected single matching bean but found 2: minimaxServiceImpl,getMinimaxService
+2025-01-10T21:54:03.120Z  INFO 23332 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-01-10T21:54:03.131Z  INFO 23332 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-01-10T21:54:03.172Z ERROR 23332 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in game.tictactoe.domain.service.gameService.impl.GameServiceImpl required a single bean, but 2 were found:
+	- minimaxServiceImpl: defined in file [/home/gearhead/Projects/new_bootcamp/AP1_Jv_T03-1/src/TicTacToe/build/classes/java/main/game/tictactoe/domain/service/minimax/impl/MinimaxServiceImpl.class]
+	- getMinimaxService: defined by method 'getMinimaxService' in class path resource [game/tictactoe/configuration/TicTacToeConfig.class]
+
+This may be due to missing parameter name information
+
+Action:
+
+Consider marking one of the beans as @Primary, updating the consumer to accept multiple beans, or using @Qualifier to identify the bean that should be consumed
+
+Ensure that your compiler is configured to use the '-parameters' flag.
+You may need to update both your build tool settings as well as your IDE.
+(See https://github.com/spring-projects/spring-framework/wiki/Upgrading-to-Spring-Framework-6.x#parameter-name-retention)
+
+
+2025-01-10T21:54:56.822Z  INFO 23828 --- [restartedMain] g.t.application.TicTacToeApplication     : Starting TicTacToeApplication using Java 23.0.1 with PID 23828 (/home/gearhead/Projects/new_bootcamp/AP1_Jv_T03-1/src/TicTacToe/build/classes/java/main started by gearhead in /home/gearhead/Projects/new_bootcamp/AP1_Jv_T03-1/src/TicTacToe)
+2025-01-10T21:54:56.825Z  INFO 23828 --- [restartedMain] g.t.application.TicTacToeApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-01-10T21:54:56.867Z  INFO 23828 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-10T21:54:56.868Z  INFO 23828 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-10T21:54:57.664Z  INFO 23828 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-01-10T21:54:57.675Z  INFO 23828 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-10T21:54:57.675Z  INFO 23828 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-01-10T21:54:57.703Z  INFO 23828 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-10T21:54:57.703Z  INFO 23828 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 834 ms
+2025-01-10T21:54:57.756Z  WARN 23828 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'gameServiceImpl' defined in file [/home/gearhead/Projects/new_bootcamp/AP1_Jv_T03-1/src/TicTacToe/build/classes/java/main/game/tictactoe/domain/service/gameService/impl/GameServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'game.tictactoe.domain.service.minimax.MinimaxService' available: expected single matching bean but found 2: minimaxServiceImpl,getMinimaxService
+2025-01-10T21:54:57.759Z  INFO 23828 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-01-10T21:54:57.770Z  INFO 23828 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-01-10T21:54:57.784Z ERROR 23828 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in game.tictactoe.domain.service.gameService.impl.GameServiceImpl required a single bean, but 2 were found:
+	- minimaxServiceImpl: defined in file [/home/gearhead/Projects/new_bootcamp/AP1_Jv_T03-1/src/TicTacToe/build/classes/java/main/game/tictactoe/domain/service/minimax/impl/MinimaxServiceImpl.class]
+	- getMinimaxService: defined by method 'getMinimaxService' in class path resource [game/tictactoe/configuration/TicTacToeConfig.class]
+
+This may be due to missing parameter name information
+
+Action:
+
+Consider marking one of the beans as @Primary, updating the consumer to accept multiple beans, or using @Qualifier to identify the bean that should be consumed
+
+Ensure that your compiler is configured to use the '-parameters' flag.
+You may need to update both your build tool settings as well as your IDE.
+(See https://github.com/spring-projects/spring-framework/wiki/Upgrading-to-Spring-Framework-6.x#parameter-name-retention)
+
+
+2025-01-10T21:55:43.597Z  INFO 24073 --- [restartedMain] g.t.application.TicTacToeApplication     : Starting TicTacToeApplication using Java 23.0.1 with PID 24073 (/home/gearhead/Projects/new_bootcamp/AP1_Jv_T03-1/src/TicTacToe/build/classes/java/main started by gearhead in /home/gearhead/Projects/new_bootcamp/AP1_Jv_T03-1/src/TicTacToe)
+2025-01-10T21:55:43.601Z  INFO 24073 --- [restartedMain] g.t.application.TicTacToeApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-01-10T21:55:43.718Z  INFO 24073 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-10T21:55:43.719Z  INFO 24073 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-10T21:55:45.319Z  INFO 24073 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-01-10T21:55:45.342Z  INFO 24073 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-10T21:55:45.342Z  INFO 24073 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-01-10T21:55:45.399Z  INFO 24073 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-10T21:55:45.400Z  INFO 24073 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1680 ms
+2025-01-10T21:55:45.465Z  WARN 24073 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'gameServiceImpl' defined in file [/home/gearhead/Projects/new_bootcamp/AP1_Jv_T03-1/src/TicTacToe/build/classes/java/main/game/tictactoe/domain/service/gameService/impl/GameServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 1: No qualifying bean of type 'game.tictactoe.datasource.repository.GameRepository' available: expected single matching bean but found 2: gameRepositoryImpl,getGameRepository
+2025-01-10T21:55:45.466Z  INFO 24073 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-01-10T21:55:45.480Z  INFO 24073 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-01-10T21:55:45.496Z ERROR 24073 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in game.tictactoe.domain.service.gameService.impl.GameServiceImpl required a single bean, but 2 were found:
+	- gameRepositoryImpl: defined in file [/home/gearhead/Projects/new_bootcamp/AP1_Jv_T03-1/src/TicTacToe/build/classes/java/main/game/tictactoe/datasource/repository/impl/GameRepositoryImpl.class]
+	- getGameRepository: defined by method 'getGameRepository' in class path resource [game/tictactoe/configuration/TicTacToeConfig.class]
+
+This may be due to missing parameter name information
+
+Action:
+
+Consider marking one of the beans as @Primary, updating the consumer to accept multiple beans, or using @Qualifier to identify the bean that should be consumed
+
+Ensure that your compiler is configured to use the '-parameters' flag.
+You may need to update both your build tool settings as well as your IDE.
+(See https://github.com/spring-projects/spring-framework/wiki/Upgrading-to-Spring-Framework-6.x#parameter-name-retention)
+
+
+2025-01-10T21:56:06.183Z  INFO 24373 --- [restartedMain] g.t.application.TicTacToeApplication     : Starting TicTacToeApplication using Java 23.0.1 with PID 24373 (/home/gearhead/Projects/new_bootcamp/AP1_Jv_T03-1/src/TicTacToe/build/classes/java/main started by gearhead in /home/gearhead/Projects/new_bootcamp/AP1_Jv_T03-1/src/TicTacToe)
+2025-01-10T21:56:06.187Z  INFO 24373 --- [restartedMain] g.t.application.TicTacToeApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-01-10T21:56:06.234Z  INFO 24373 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-10T21:56:06.234Z  INFO 24373 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-10T21:56:07.245Z  INFO 24373 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-01-10T21:56:07.264Z  INFO 24373 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-10T21:56:07.265Z  INFO 24373 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-01-10T21:56:07.320Z  INFO 24373 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-10T21:56:07.321Z  INFO 24373 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1086 ms
+2025-01-10T21:56:07.382Z  WARN 24373 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'gameController' defined in file [/home/gearhead/Projects/new_bootcamp/AP1_Jv_T03-1/src/TicTacToe/build/classes/java/main/game/tictactoe/web/controller/GameController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'game.tictactoe.domain.service.gameService.GameService' available: expected single matching bean but found 2: gameServiceImpl,getGameService
+2025-01-10T21:56:07.389Z  INFO 24373 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-01-10T21:56:07.403Z  INFO 24373 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-01-10T21:56:07.421Z ERROR 24373 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in game.tictactoe.web.controller.GameController required a single bean, but 2 were found:
+	- gameServiceImpl: defined in file [/home/gearhead/Projects/new_bootcamp/AP1_Jv_T03-1/src/TicTacToe/build/classes/java/main/game/tictactoe/domain/service/gameService/impl/GameServiceImpl.class]
+	- getGameService: defined by method 'getGameService' in class path resource [game/tictactoe/configuration/TicTacToeConfig.class]
+
+This may be due to missing parameter name information
+
+Action:
+
+Consider marking one of the beans as @Primary, updating the consumer to accept multiple beans, or using @Qualifier to identify the bean that should be consumed
+
+Ensure that your compiler is configured to use the '-parameters' flag.
+You may need to update both your build tool settings as well as your IDE.
+(See https://github.com/spring-projects/spring-framework/wiki/Upgrading-to-Spring-Framework-6.x#parameter-name-retention)
+
+
+2025-01-10T21:56:25.082Z  INFO 24561 --- [restartedMain] g.t.application.TicTacToeApplication     : Starting TicTacToeApplication using Java 23.0.1 with PID 24561 (/home/gearhead/Projects/new_bootcamp/AP1_Jv_T03-1/src/TicTacToe/build/classes/java/main started by gearhead in /home/gearhead/Projects/new_bootcamp/AP1_Jv_T03-1/src/TicTacToe)
+2025-01-10T21:56:25.086Z  INFO 24561 --- [restartedMain] g.t.application.TicTacToeApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-01-10T21:56:25.185Z  INFO 24561 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-10T21:56:25.185Z  INFO 24561 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-10T21:56:26.785Z  INFO 24561 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-01-10T21:56:26.799Z  INFO 24561 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-10T21:56:26.800Z  INFO 24561 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-01-10T21:56:26.852Z  INFO 24561 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-10T21:56:26.853Z  INFO 24561 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1668 ms
+2025-01-10T21:56:27.449Z  INFO 24561 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-01-10T21:56:27.477Z  INFO 24561 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-01-10T21:56:27.487Z  INFO 24561 --- [restartedMain] g.t.application.TicTacToeApplication     : Started TicTacToeApplication in 2.882 seconds (process running for 3.353)
+2025-01-10T21:56:32.041Z  INFO 24561 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-10T21:56:32.042Z  INFO 24561 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-01-10T21:56:32.043Z  INFO 24561 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-01-10T21:56:32.237Z  INFO 24561 --- [http-nio-8080-exec-2] g.t.web.controller.GameController        : Request received: POST /api/v1/game, GameCreationRequest = GameCreationRequest(playerSide=X, gameField=GameFieldDTO(gameField=[[ , X,  ], [ ,  ,  ], [ ,  ,  ]]))
+2025-01-10T21:56:32.247Z  INFO 24561 --- [http-nio-8080-exec-2] g.t.d.s.g.impl.GameServiceImpl           : Created game: Game(uuid=bc42ef04-ba9d-4bd2-9350-04bc9823a4eb, playerSide=X, gameField=GameField(fieldMatrix=[[O, X, EMPTY], [EMPTY, EMPTY, EMPTY], [EMPTY, EMPTY, EMPTY]]))
+2025-01-10T21:56:33.778Z  INFO 24561 --- [http-nio-8080-exec-4] g.t.web.controller.GameController        : Request received: PUT /api/v1/game/{uuid}, UUID = bc42ef04-ba9d-4bd2-9350-04bc9823a4eb, NewGameField = GameFieldDTO(gameField=[[O, X,  ], [ ,  ,  ], [ , X,  ]])
+2025-01-10T21:56:33.779Z  INFO 24561 --- [http-nio-8080-exec-4] g.t.web.controller.GameController        : Updated game: Game(uuid=bc42ef04-ba9d-4bd2-9350-04bc9823a4eb, playerSide=X, gameField=GameField(fieldMatrix=[[O, X, EMPTY], [EMPTY, O, EMPTY], [EMPTY, X, EMPTY]]))
+2025-01-10T21:56:34.963Z  INFO 24561 --- [http-nio-8080-exec-5] g.t.web.controller.GameController        : Request received: PUT /api/v1/game/{uuid}, UUID = bc42ef04-ba9d-4bd2-9350-04bc9823a4eb, NewGameField = GameFieldDTO(gameField=[[O, X,  ], [ , O,  ], [ , X, X]])
+2025-01-10T21:56:34.964Z  INFO 24561 --- [http-nio-8080-exec-5] g.t.web.controller.GameController        : Updated game: Game(uuid=bc42ef04-ba9d-4bd2-9350-04bc9823a4eb, playerSide=X, gameField=GameField(fieldMatrix=[[O, X, EMPTY], [EMPTY, O, EMPTY], [O, X, X]]))
+2025-01-10T21:56:36.036Z  INFO 24561 --- [http-nio-8080-exec-6] g.t.web.controller.GameController        : Request received: PUT /api/v1/game/{uuid}, UUID = bc42ef04-ba9d-4bd2-9350-04bc9823a4eb, NewGameField = GameFieldDTO(gameField=[[O, X, X], [ , O,  ], [O, X, X]])
+2025-01-10T21:56:36.038Z  INFO 24561 --- [http-nio-8080-exec-6] g.t.web.controller.GameController        : Updated game: Game(uuid=bc42ef04-ba9d-4bd2-9350-04bc9823a4eb, playerSide=X, gameField=GameField(fieldMatrix=[[O, X, X], [O, O, EMPTY], [O, X, X]]))
+2025-01-10T21:56:38.920Z  INFO 24561 --- [http-nio-8080-exec-7] g.t.web.controller.GameController        : Request received: POST /api/v1/game, GameCreationRequest = GameCreationRequest(playerSide=X, gameField=GameFieldDTO(gameField=[[X,  ,  ], [ ,  ,  ], [ ,  ,  ]]))
+2025-01-10T21:56:38.927Z  INFO 24561 --- [http-nio-8080-exec-7] g.t.d.s.g.impl.GameServiceImpl           : Created game: Game(uuid=e4ccd089-e339-4569-b9a6-ed3ae6b7cf63, playerSide=X, gameField=GameField(fieldMatrix=[[X, EMPTY, EMPTY], [EMPTY, O, EMPTY], [EMPTY, EMPTY, EMPTY]]))
+2025-01-10T21:56:40.846Z  INFO 24561 --- [http-nio-8080-exec-9] g.t.web.controller.GameController        : Request received: PUT /api/v1/game/{uuid}, UUID = e4ccd089-e339-4569-b9a6-ed3ae6b7cf63, NewGameField = GameFieldDTO(gameField=[[X,  ,  ], [ , O,  ], [X,  ,  ]])
+2025-01-10T21:56:40.848Z  INFO 24561 --- [http-nio-8080-exec-9] g.t.web.controller.GameController        : Updated game: Game(uuid=e4ccd089-e339-4569-b9a6-ed3ae6b7cf63, playerSide=X, gameField=GameField(fieldMatrix=[[X, EMPTY, EMPTY], [O, O, EMPTY], [X, EMPTY, EMPTY]]))
+2025-01-10T21:56:43.205Z  INFO 24561 --- [http-nio-8080-exec-10] g.t.web.controller.GameController        : Request received: PUT /api/v1/game/{uuid}, UUID = e4ccd089-e339-4569-b9a6-ed3ae6b7cf63, NewGameField = GameFieldDTO(gameField=[[X,  , X], [O, O,  ], [X,  ,  ]])
+2025-01-10T21:56:43.206Z  INFO 24561 --- [http-nio-8080-exec-10] g.t.web.controller.GameController        : Updated game: Game(uuid=e4ccd089-e339-4569-b9a6-ed3ae6b7cf63, playerSide=X, gameField=GameField(fieldMatrix=[[X, O, X], [O, O, EMPTY], [X, EMPTY, EMPTY]]))
+2025-01-10T21:56:50.904Z  INFO 24561 --- [http-nio-8080-exec-1] g.t.web.controller.GameController        : Request received: PUT /api/v1/game/{uuid}, UUID = e4ccd089-e339-4569-b9a6-ed3ae6b7cf63, NewGameField = GameFieldDTO(gameField=[[X, O, X], [O, O,  ], [X, X,  ]])
+2025-01-10T21:56:50.904Z  INFO 24561 --- [http-nio-8080-exec-1] g.t.web.controller.GameController        : Updated game: Game(uuid=e4ccd089-e339-4569-b9a6-ed3ae6b7cf63, playerSide=X, gameField=GameField(fieldMatrix=[[X, O, X], [O, O, O], [X, X, EMPTY]]))
+2025-01-10T21:56:58.623Z  INFO 24561 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-10T21:56:58.634Z  INFO 24561 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-01-10T21:59:26.004Z  INFO 25181 --- [Test worker] g.t.w.c.GameControllerIntegrationTest    : Starting GameControllerIntegrationTest using Java 23.0.1 with PID 25181 (started by gearhead in /home/gearhead/Projects/new_bootcamp/AP1_Jv_T03-1/src/TicTacToe)
+2025-01-10T21:59:26.007Z  INFO 25181 --- [Test worker] g.t.w.c.GameControllerIntegrationTest    : No active profile set, falling back to 1 default profile: "default"
+2025-01-10T21:59:27.701Z  INFO 25181 --- [Test worker] .i.s.PathMatchingResourcePatternResolver : Skipping search for files matching pattern [**/*.class]: directory [/home/gearhead/Projects/new_bootcamp/AP1_Jv_T03-1/src/TicTacToe/build/classes/java/test/game/tictactoe/application] does not exist
+2025-01-10T21:59:27.954Z  INFO 25181 --- [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-01-10T21:59:27.955Z  INFO 25181 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-01-10T21:59:27.956Z  INFO 25181 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-01-10T21:59:27.992Z  INFO 25181 --- [Test worker] g.t.w.c.GameControllerIntegrationTest    : Started GameControllerIntegrationTest in 2.402 seconds (process running for 5.6)
+2025-01-10T21:59:28.197Z  INFO 25181 --- [Test worker] g.t.web.controller.GameController        : Request received: PUT /api/v1/game/{uuid}, UUID = 00000000-0000-0000-0000-00000000ffff, NewGameField = GameFieldDTO(gameField=[[O,  ,  ], [ ,  ,  ], [ ,  ,  ]])
+2025-01-10T21:59:28.243Z  INFO 25181 --- [Test worker] g.t.web.controller.GameController        : Request received: POST /api/v1/game, GameCreationRequest = GameCreationRequest(playerSide=O, gameField=GameFieldDTO(gameField=[[O,  ,  ], [ ,  ,  ], [ ,  ,  ]]))
+2025-01-10T21:59:28.274Z  INFO 25181 --- [Test worker] g.t.web.controller.GameController        : Request received: POST /api/v1/game, GameCreationRequest = GameCreationRequest(playerSide=X, gameField=GameFieldDTO(gameField=[[ ,  ,  ], [ ,  ,  ], [ ,  ,  ]]))
+2025-01-10T21:59:28.282Z  INFO 25181 --- [Test worker] g.t.web.controller.GameController        : Request received: POST /api/v1/game, GameCreationRequest = GameCreationRequest(playerSide=O, gameField=GameFieldDTO(gameField=[[ ,  ,  ], [ ,  ,  ], [ ,  ,  ]]))
+2025-01-10T21:59:28.283Z  INFO 25181 --- [Test worker] g.t.d.s.g.impl.GameServiceImpl           : Created game: Game(uuid=f28f2524-b514-4939-be0c-d3519633f9f4, playerSide=O, gameField=GameField(fieldMatrix=[[EMPTY, X, EMPTY], [EMPTY, EMPTY, EMPTY], [EMPTY, EMPTY, EMPTY]]))
+2025-01-10T21:59:28.374Z  INFO 25181 --- [Test worker] g.t.web.controller.GameController        : Request received: PUT /api/v1/game/{uuid}, UUID = f28f2524-b514-4939-be0c-d3519633f9f4, NewGameField = GameFieldDTO(gameField=[[O, X,  ], [ ,  ,  ], [ ,  ,  ]])
+2025-01-10T21:59:28.377Z  INFO 25181 --- [Test worker] g.t.web.controller.GameController        : Updated game: Game(uuid=f28f2524-b514-4939-be0c-d3519633f9f4, playerSide=O, gameField=GameField(fieldMatrix=[[O, X, EMPTY], [X, EMPTY, EMPTY], [EMPTY, EMPTY, EMPTY]]))
+2025-01-10T21:59:28.393Z  INFO 25181 --- [Test worker] g.t.web.controller.GameController        : Request received: POST /api/v1/game, GameCreationRequest = GameCreationRequest(playerSide=O, gameField=GameFieldDTO(gameField=[[ ,  ,  ], [ ,  ,  ], [ ,  ,  ]]))
+2025-01-10T21:59:28.394Z  INFO 25181 --- [Test worker] g.t.d.s.g.impl.GameServiceImpl           : Created game: Game(uuid=6a6e3141-f091-45e2-a823-de76ae5b3596, playerSide=O, gameField=GameField(fieldMatrix=[[EMPTY, EMPTY, EMPTY], [X, EMPTY, EMPTY], [EMPTY, EMPTY, EMPTY]]))
+2025-01-10T21:59:28.399Z  INFO 25181 --- [Test worker] g.t.web.controller.GameController        : Request received: PUT /api/v1/game/{uuid}, UUID = 6a6e3141-f091-45e2-a823-de76ae5b3596, NewGameField = GameFieldDTO(gameField=[[ ,  ,  ], [ ,  ,  ], [ ,  ,  ]])
+2025-01-10T21:59:28.421Z  INFO 25181 --- [Test worker] g.t.web.controller.GameController        : Request received: POST /api/v1/game, GameCreationRequest = GameCreationRequest(playerSide=O, gameField=GameFieldDTO(gameField=[[ ,  ,  ], [ ,  ,  ], [ ,  ,  ]]))
+2025-01-10T21:59:28.422Z  INFO 25181 --- [Test worker] g.t.d.s.g.impl.GameServiceImpl           : Created game: Game(uuid=9cd66b8b-8ff8-4944-b53e-dea480c236e5, playerSide=O, gameField=GameField(fieldMatrix=[[EMPTY, EMPTY, EMPTY], [EMPTY, EMPTY, X], [EMPTY, EMPTY, EMPTY]]))
+2025-01-10T21:59:28.532Z  INFO 25181 --- [Test worker] g.t.web.controller.GameController        : Request received: PUT /api/v1/game/{uuid}, UUID = 27b66289-3ebf-47de-96d0-9c9a6ec03a49, NewGameField = GameFieldDTO(gameField=[[ ,  ,  ], [ , X,  ], [ ,  ,  ]])
+2025-01-10T21:59:28.534Z  INFO 25181 --- [Test worker] g.t.web.controller.GameController        : Updated game: Game(uuid=27b66289-3ebf-47de-96d0-9c9a6ec03a49, playerSide=X, gameField=GameField(fieldMatrix=[[O, EMPTY, EMPTY], [EMPTY, X, EMPTY], [EMPTY, EMPTY, EMPTY]]))
+2025-01-10T21:59:28.538Z  INFO 25181 --- [Test worker] g.t.web.controller.GameController        : Request received: POST /api/v1/game, GameCreationRequest = GameCreationRequest(playerSide=O, gameField=GameFieldDTO(gameField=[[ ,  ,  ], [ ,  ,  ], [ ,  ,  ]]))
+2025-01-10T22:02:13.119Z  INFO 25671 --- [Test worker] g.t.w.c.GameControllerIntegrationTest    : Starting GameControllerIntegrationTest using Java 23.0.1 with PID 25671 (started by gearhead in /home/gearhead/Projects/new_bootcamp/AP1_Jv_T03-1/src/TicTacToe)
+2025-01-10T22:02:13.123Z  INFO 25671 --- [Test worker] g.t.w.c.GameControllerIntegrationTest    : No active profile set, falling back to 1 default profile: "default"
+2025-01-10T22:02:14.763Z  INFO 25671 --- [Test worker] .i.s.PathMatchingResourcePatternResolver : Skipping search for files matching pattern [**/*.class]: directory [/home/gearhead/Projects/new_bootcamp/AP1_Jv_T03-1/src/TicTacToe/build/classes/java/test/game/tictactoe/application] does not exist
+2025-01-10T22:02:15.025Z  INFO 25671 --- [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-01-10T22:02:15.026Z  INFO 25671 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-01-10T22:02:15.027Z  INFO 25671 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-01-10T22:02:15.070Z  INFO 25671 --- [Test worker] g.t.w.c.GameControllerIntegrationTest    : Started GameControllerIntegrationTest in 2.377 seconds (process running for 5.653)
+2025-01-10T22:02:15.284Z  INFO 25671 --- [Test worker] g.t.web.controller.GameController        : Request received: PUT /api/v1/game/{uuid}, UUID = 00000000-0000-0000-0000-00000000ffff, NewGameField = GameFieldDTO(gameField=[[O,  ,  ], [ ,  ,  ], [ ,  ,  ]])
+2025-01-10T22:02:15.330Z  INFO 25671 --- [Test worker] g.t.web.controller.GameController        : Request received: POST /api/v1/game, GameCreationRequest = GameCreationRequest(playerSide=O, gameField=GameFieldDTO(gameField=[[O,  ,  ], [ ,  ,  ], [ ,  ,  ]]))
+2025-01-10T22:02:15.358Z  INFO 25671 --- [Test worker] g.t.web.controller.GameController        : Request received: POST /api/v1/game, GameCreationRequest = GameCreationRequest(playerSide=X, gameField=GameFieldDTO(gameField=[[ ,  ,  ], [ ,  ,  ], [ ,  ,  ]]))
+2025-01-10T22:02:15.367Z  INFO 25671 --- [Test worker] g.t.web.controller.GameController        : Request received: POST /api/v1/game, GameCreationRequest = GameCreationRequest(playerSide=O, gameField=GameFieldDTO(gameField=[[ ,  ,  ], [ ,  ,  ], [ ,  ,  ]]))
+2025-01-10T22:02:15.367Z  INFO 25671 --- [Test worker] g.t.d.s.g.impl.GameServiceImpl           : Created game: Game(uuid=898b5042-63d6-4f62-b2ad-56da4e1041d2, playerSide=O, gameField=GameField(fieldMatrix=[[EMPTY, EMPTY, EMPTY], [EMPTY, EMPTY, EMPTY], [X, EMPTY, EMPTY]]))
+2025-01-10T22:02:15.469Z  INFO 25671 --- [Test worker] g.t.web.controller.GameController        : Request received: PUT /api/v1/game/{uuid}, UUID = 898b5042-63d6-4f62-b2ad-56da4e1041d2, NewGameField = GameFieldDTO(gameField=[[O,  ,  ], [ ,  ,  ], [X,  ,  ]])
+2025-01-10T22:02:15.472Z  INFO 25671 --- [Test worker] g.t.web.controller.GameController        : Updated game: Game(uuid=898b5042-63d6-4f62-b2ad-56da4e1041d2, playerSide=O, gameField=GameField(fieldMatrix=[[O, EMPTY, X], [EMPTY, EMPTY, EMPTY], [X, EMPTY, EMPTY]]))
+2025-01-10T22:02:15.482Z  INFO 25671 --- [Test worker] g.t.web.controller.GameController        : Request received: POST /api/v1/game, GameCreationRequest = GameCreationRequest(playerSide=O, gameField=GameFieldDTO(gameField=[[ ,  ,  ], [ ,  ,  ], [ ,  ,  ]]))
+2025-01-10T22:02:15.483Z  INFO 25671 --- [Test worker] g.t.d.s.g.impl.GameServiceImpl           : Created game: Game(uuid=30c4dc5d-0f33-4cfe-b37e-b920c6036893, playerSide=O, gameField=GameField(fieldMatrix=[[EMPTY, EMPTY, EMPTY], [EMPTY, EMPTY, EMPTY], [EMPTY, EMPTY, X]]))
+2025-01-10T22:02:15.486Z  INFO 25671 --- [Test worker] g.t.web.controller.GameController        : Request received: PUT /api/v1/game/{uuid}, UUID = 30c4dc5d-0f33-4cfe-b37e-b920c6036893, NewGameField = GameFieldDTO(gameField=[[ ,  ,  ], [ ,  ,  ], [ ,  ,  ]])
+2025-01-10T22:02:15.505Z  INFO 25671 --- [Test worker] g.t.web.controller.GameController        : Request received: POST /api/v1/game, GameCreationRequest = GameCreationRequest(playerSide=O, gameField=GameFieldDTO(gameField=[[ ,  ,  ], [ ,  ,  ], [ ,  ,  ]]))
+2025-01-10T22:02:15.506Z  INFO 25671 --- [Test worker] g.t.d.s.g.impl.GameServiceImpl           : Created game: Game(uuid=9d90fb71-5266-4700-a36a-6cf7c2cf3f5c, playerSide=O, gameField=GameField(fieldMatrix=[[EMPTY, EMPTY, EMPTY], [X, EMPTY, EMPTY], [EMPTY, EMPTY, EMPTY]]))
+2025-01-10T22:02:15.608Z  INFO 25671 --- [Test worker] g.t.web.controller.GameController        : Request received: PUT /api/v1/game/{uuid}, UUID = ebaa2ac4-f70c-4fca-9723-886b02bdff2e, NewGameField = GameFieldDTO(gameField=[[ ,  ,  ], [ , X,  ], [ ,  ,  ]])
+2025-01-10T22:02:15.610Z  INFO 25671 --- [Test worker] g.t.web.controller.GameController        : Updated game: Game(uuid=ebaa2ac4-f70c-4fca-9723-886b02bdff2e, playerSide=X, gameField=GameField(fieldMatrix=[[O, EMPTY, EMPTY], [EMPTY, X, EMPTY], [EMPTY, EMPTY, EMPTY]]))
+2025-01-10T22:02:15.617Z  INFO 25671 --- [Test worker] g.t.web.controller.GameController        : Request received: POST /api/v1/game, GameCreationRequest = GameCreationRequest(playerSide=O, gameField=GameFieldDTO(gameField=[[ ,  ,  ], [ ,  ,  ], [ ,  ,  ]]))
+2025-01-10T22:05:24.268Z  INFO 26080 --- [Test worker] g.t.w.c.GameControllerIntegrationTest    : Starting GameControllerIntegrationTest using Java 23.0.1 with PID 26080 (started by gearhead in /home/gearhead/Projects/new_bootcamp/AP1_Jv_T03-1/src/TicTacToe)
+2025-01-10T22:05:24.271Z  INFO 26080 --- [Test worker] g.t.w.c.GameControllerIntegrationTest    : No active profile set, falling back to 1 default profile: "default"
+2025-01-10T22:05:25.771Z  INFO 26080 --- [Test worker] .i.s.PathMatchingResourcePatternResolver : Skipping search for files matching pattern [**/*.class]: directory [/home/gearhead/Projects/new_bootcamp/AP1_Jv_T03-1/src/TicTacToe/build/classes/java/test/game/tictactoe/application] does not exist
+2025-01-10T22:05:26.007Z  INFO 26080 --- [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-01-10T22:05:26.007Z  INFO 26080 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-01-10T22:05:26.009Z  INFO 26080 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-01-10T22:05:26.048Z  INFO 26080 --- [Test worker] g.t.w.c.GameControllerIntegrationTest    : Started GameControllerIntegrationTest in 2.191 seconds (process running for 5.353)
+2025-01-10T22:05:26.269Z  INFO 26080 --- [Test worker] g.t.web.controller.GameController        : Request received: PUT /api/v1/game/{uuid}, UUID = 00000000-0000-0000-0000-00000000ffff, NewGameField = GameFieldDTO(gameField=[[O,  ,  ], [ ,  ,  ], [ ,  ,  ]])
+2025-01-10T22:05:26.322Z  INFO 26080 --- [Test worker] g.t.web.controller.GameController        : Request received: POST /api/v1/game, GameCreationRequest = GameCreationRequest(playerSide=O, gameField=GameFieldDTO(gameField=[[O,  ,  ], [ ,  ,  ], [ ,  ,  ]]))
+2025-01-10T22:05:26.349Z  INFO 26080 --- [Test worker] g.t.web.controller.GameController        : Request received: POST /api/v1/game, GameCreationRequest = GameCreationRequest(playerSide=X, gameField=GameFieldDTO(gameField=[[ ,  ,  ], [ ,  ,  ], [ ,  ,  ]]))
+2025-01-10T22:05:26.357Z  INFO 26080 --- [Test worker] g.t.web.controller.GameController        : Request received: POST /api/v1/game, GameCreationRequest = GameCreationRequest(playerSide=O, gameField=GameFieldDTO(gameField=[[ ,  ,  ], [ ,  ,  ], [ ,  ,  ]]))
+2025-01-10T22:05:26.358Z  INFO 26080 --- [Test worker] g.t.d.s.g.impl.GameServiceImpl           : Created game: Game(uuid=405346d2-16f0-49f0-8721-bc5d90c33c3d, playerSide=O, gameField=GameField(fieldMatrix=[[EMPTY, EMPTY, EMPTY], [X, EMPTY, EMPTY], [EMPTY, EMPTY, EMPTY]]))
+2025-01-10T22:05:26.442Z  INFO 26080 --- [Test worker] g.t.web.controller.GameController        : Request received: PUT /api/v1/game/{uuid}, UUID = 405346d2-16f0-49f0-8721-bc5d90c33c3d, NewGameField = GameFieldDTO(gameField=[[O,  ,  ], [X,  ,  ], [ ,  ,  ]])
+2025-01-10T22:05:26.446Z  INFO 26080 --- [Test worker] g.t.web.controller.GameController        : Updated game: Game(uuid=405346d2-16f0-49f0-8721-bc5d90c33c3d, playerSide=O, gameField=GameField(fieldMatrix=[[O, X, EMPTY], [X, EMPTY, EMPTY], [EMPTY, EMPTY, EMPTY]]))
+2025-01-10T22:05:26.454Z  INFO 26080 --- [Test worker] g.t.web.controller.GameController        : Request received: POST /api/v1/game, GameCreationRequest = GameCreationRequest(playerSide=O, gameField=GameFieldDTO(gameField=[[ ,  ,  ], [ ,  ,  ], [ ,  ,  ]]))
+2025-01-10T22:05:26.455Z  INFO 26080 --- [Test worker] g.t.d.s.g.impl.GameServiceImpl           : Created game: Game(uuid=1081ba48-1244-4509-bbc5-8e614edef383, playerSide=O, gameField=GameField(fieldMatrix=[[X, EMPTY, EMPTY], [EMPTY, EMPTY, EMPTY], [EMPTY, EMPTY, EMPTY]]))
+2025-01-10T22:05:26.461Z  INFO 26080 --- [Test worker] g.t.web.controller.GameController        : Request received: PUT /api/v1/game/{uuid}, UUID = 1081ba48-1244-4509-bbc5-8e614edef383, NewGameField = GameFieldDTO(gameField=[[ ,  ,  ], [ ,  ,  ], [ ,  ,  ]])
+2025-01-10T22:05:26.479Z  INFO 26080 --- [Test worker] g.t.web.controller.GameController        : Request received: POST /api/v1/game, GameCreationRequest = GameCreationRequest(playerSide=O, gameField=GameFieldDTO(gameField=[[ ,  ,  ], [ ,  ,  ], [ ,  ,  ]]))
+2025-01-10T22:05:26.479Z  INFO 26080 --- [Test worker] g.t.d.s.g.impl.GameServiceImpl           : Created game: Game(uuid=7247d2c9-0d5f-4ad6-ab3c-0b5b15eb5f02, playerSide=O, gameField=GameField(fieldMatrix=[[EMPTY, EMPTY, EMPTY], [EMPTY, EMPTY, EMPTY], [X, EMPTY, EMPTY]]))
+2025-01-10T22:05:26.593Z  INFO 26080 --- [Test worker] g.t.web.controller.GameController        : Request received: PUT /api/v1/game/{uuid}, UUID = 4b15606d-d724-4ae4-b909-c04e0d11915f, NewGameField = GameFieldDTO(gameField=[[ ,  ,  ], [ , X,  ], [ ,  ,  ]])
+2025-01-10T22:05:26.594Z  INFO 26080 --- [Test worker] g.t.web.controller.GameController        : Updated game: Game(uuid=4b15606d-d724-4ae4-b909-c04e0d11915f, playerSide=X, gameField=GameField(fieldMatrix=[[O, EMPTY, EMPTY], [EMPTY, X, EMPTY], [EMPTY, EMPTY, EMPTY]]))
+2025-01-10T22:05:26.600Z  INFO 26080 --- [Test worker] g.t.web.controller.GameController        : Request received: POST /api/v1/game, GameCreationRequest = GameCreationRequest(playerSide=O, gameField=GameFieldDTO(gameField=[[ ,  ,  ], [ ,  ,  ], [ ,  ,  ]]))
+2025-01-10T22:06:09.273Z  INFO 26539 --- [Test worker] g.t.w.c.GameControllerIntegrationTest    : Starting GameControllerIntegrationTest using Java 23.0.1 with PID 26539 (started by gearhead in /home/gearhead/Projects/new_bootcamp/AP1_Jv_T03-1/src/TicTacToe)
+2025-01-10T22:06:09.277Z  INFO 26539 --- [Test worker] g.t.w.c.GameControllerIntegrationTest    : No active profile set, falling back to 1 default profile: "default"
+2025-01-10T22:06:11.892Z  INFO 26539 --- [Test worker] .i.s.PathMatchingResourcePatternResolver : Skipping search for files matching pattern [**/*.class]: directory [/home/gearhead/Projects/new_bootcamp/AP1_Jv_T03-1/src/TicTacToe/build/classes/java/test/game/tictactoe/application] does not exist
+2025-01-10T22:06:12.259Z  INFO 26539 --- [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-01-10T22:06:12.260Z  INFO 26539 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-01-10T22:06:12.262Z  INFO 26539 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-01-10T22:06:12.332Z  INFO 26539 --- [Test worker] g.t.w.c.GameControllerIntegrationTest    : Started GameControllerIntegrationTest in 3.395 seconds (process running for 6.979)
+2025-01-10T22:06:12.742Z  INFO 26539 --- [Test worker] g.t.web.controller.GameController        : Request received: PUT /api/v1/game/{uuid}, UUID = 00000000-0000-0000-0000-00000000ffff, NewGameField = GameFieldDTO(gameField=[[O,  ,  ], [ ,  ,  ], [ ,  ,  ]])
+2025-01-10T22:06:12.752Z  WARN 26539 --- [Test worker] .m.m.a.ExceptionHandlerExceptionResolver : Failure in @ExceptionHandler game.tictactoe.web.advice.TicTacToeExceptionHandler#handleResourceNotFoundException(ResourceNotFoundException)
+
+java.lang.TypeNotPresentException: Type game.tictactoe.web.model.ErrorResponse not present
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:116) ~[na:na]
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125) ~[na:na]
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49) ~[na:na]
+	at java.base/sun.reflect.generics.visitor.Reifier.reifyTypeArguments(Reifier.java:68) ~[na:na]
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:138) ~[na:na]
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49) ~[na:na]
+	at java.base/sun.reflect.generics.repository.MethodRepository.computeReturnType(MethodRepository.java:75) ~[na:na]
+	at java.base/sun.reflect.generics.repository.MethodRepository.getReturnType(MethodRepository.java:66) ~[na:na]
+	at java.base/java.lang.reflect.Method.getGenericReturnType(Method.java:299) ~[na:na]
+	at org.springframework.core.MethodParameter.getGenericParameterType(MethodParameter.java:516) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor.getHttpEntityType(HttpEntityMethodProcessor.java:169) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor.getReturnValueType(HttpEntityMethodProcessor.java:327) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:223) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor.handleReturnValue(HttpEntityMethodProcessor.java:261) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:78) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:136) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.doResolveHandlerMethodException(ExceptionHandlerExceptionResolver.java:471) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodExceptionResolver.doResolveException(AbstractHandlerMethodExceptionResolver.java:73) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.resolveException(AbstractHandlerExceptionResolver.java:182) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.handler.HandlerExceptionResolverComposite.resolveException(HandlerExceptionResolverComposite.java:80) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.DispatcherServlet.processHandlerException(DispatcherServlet.java:1357) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.test.web.servlet.TestDispatcherServlet.processHandlerException(TestDispatcherServlet.java:146) ~[spring-test-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1160) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1105) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:925) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:593) ~[tomcat-embed-core-10.1.33.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:72) ~[spring-test-6.2.0.jar:6.2.0]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.33.jar:6.0]
+	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:165) ~[spring-test-6.2.0.jar:6.2.0]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:162) ~[spring-test-6.2.0.jar:6.2.0]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:162) ~[spring-test-6.2.0.jar:6.2.0]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:162) ~[spring-test-6.2.0.jar:6.2.0]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.2.0.jar:6.2.0]
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:201) ~[spring-test-6.2.0.jar:6.2.0]
+	at game.tictactoe.web.controller.GameControllerIntegrationTest.testUpdateGame_NotExistGame(GameControllerIntegrationTest.java:262) ~[test/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:767) ~[junit-platform-commons-1.11.3.jar:1.11.3]
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$8(TestMethodTestDescriptor.java:217) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:124) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:99) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:94) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:63) ~[na:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36) ~[na:na]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) ~[na:na]
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33) ~[na:na]
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92) ~[na:na]
+	at jdk.proxy2/jdk.proxy2.$Proxy6.stop(Unknown Source) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:200) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:132) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63) ~[na:na]
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56) ~[na:na]
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:121) ~[na:na]
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71) ~[na:na]
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69) ~[gradle-worker.jar:na]
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74) ~[gradle-worker.jar:na]
+Caused by: java.lang.ClassNotFoundException: game.tictactoe.web.model.ErrorResponse
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:528) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:578) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:557) ~[na:na]
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:113) ~[na:na]
+	... 126 common frames omitted
+
+2025-01-10T22:06:12.852Z  INFO 26539 --- [Test worker] g.t.web.controller.GameController        : Request received: POST /api/v1/game, GameCreationRequest = GameCreationRequest(playerSide=O, gameField=GameFieldDTO(gameField=[[O,  ,  ], [ ,  ,  ], [ ,  ,  ]]))
+2025-01-10T22:06:12.855Z  WARN 26539 --- [Test worker] .m.m.a.ExceptionHandlerExceptionResolver : Failure in @ExceptionHandler game.tictactoe.web.advice.TicTacToeExceptionHandler#handleInvalidRequestBodyException(InvalidRequestBodyException)
+
+java.lang.NoClassDefFoundError: game/tictactoe/web/model/ErrorResponse
+	at game.tictactoe.web.advice.TicTacToeExceptionHandler.handleInvalidRequestBodyException(TicTacToeExceptionHandler.java:45) ~[main/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.doResolveHandlerMethodException(ExceptionHandlerExceptionResolver.java:471) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodExceptionResolver.doResolveException(AbstractHandlerMethodExceptionResolver.java:73) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.resolveException(AbstractHandlerExceptionResolver.java:182) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.handler.HandlerExceptionResolverComposite.resolveException(HandlerExceptionResolverComposite.java:80) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.DispatcherServlet.processHandlerException(DispatcherServlet.java:1357) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.test.web.servlet.TestDispatcherServlet.processHandlerException(TestDispatcherServlet.java:146) ~[spring-test-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1160) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1105) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.33.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:72) ~[spring-test-6.2.0.jar:6.2.0]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.33.jar:6.0]
+	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:165) ~[spring-test-6.2.0.jar:6.2.0]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:162) ~[spring-test-6.2.0.jar:6.2.0]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:162) ~[spring-test-6.2.0.jar:6.2.0]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:162) ~[spring-test-6.2.0.jar:6.2.0]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.2.0.jar:6.2.0]
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:201) ~[spring-test-6.2.0.jar:6.2.0]
+	at game.tictactoe.web.controller.GameControllerIntegrationTest.testCreateGameAndMakeFirstMove_NotValidGameFieldForPlayerO(GameControllerIntegrationTest.java:99) ~[test/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:767) ~[junit-platform-commons-1.11.3.jar:1.11.3]
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$8(TestMethodTestDescriptor.java:217) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:124) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:99) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:94) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:63) ~[na:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36) ~[na:na]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) ~[na:na]
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33) ~[na:na]
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92) ~[na:na]
+	at jdk.proxy2/jdk.proxy2.$Proxy6.stop(Unknown Source) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:200) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:132) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63) ~[na:na]
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56) ~[na:na]
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:121) ~[na:na]
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71) ~[na:na]
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69) ~[gradle-worker.jar:na]
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74) ~[gradle-worker.jar:na]
+Caused by: java.lang.ClassNotFoundException: game.tictactoe.web.model.ErrorResponse
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:528) ~[na:na]
+	... 117 common frames omitted
+
+2025-01-10T22:06:12.871Z  INFO 26539 --- [Test worker] g.t.web.controller.GameController        : Request received: POST /api/v1/game, GameCreationRequest = GameCreationRequest(playerSide=X, gameField=GameFieldDTO(gameField=[[ ,  ,  ], [ ,  ,  ], [ ,  ,  ]]))
+2025-01-10T22:06:12.872Z  WARN 26539 --- [Test worker] .m.m.a.ExceptionHandlerExceptionResolver : Failure in @ExceptionHandler game.tictactoe.web.advice.TicTacToeExceptionHandler#handleInvalidRequestBodyException(InvalidRequestBodyException)
+
+java.lang.NoClassDefFoundError: game/tictactoe/web/model/ErrorResponse
+	at game.tictactoe.web.advice.TicTacToeExceptionHandler.handleInvalidRequestBodyException(TicTacToeExceptionHandler.java:45) ~[main/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.doResolveHandlerMethodException(ExceptionHandlerExceptionResolver.java:471) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodExceptionResolver.doResolveException(AbstractHandlerMethodExceptionResolver.java:73) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.resolveException(AbstractHandlerExceptionResolver.java:182) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.handler.HandlerExceptionResolverComposite.resolveException(HandlerExceptionResolverComposite.java:80) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.DispatcherServlet.processHandlerException(DispatcherServlet.java:1357) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.test.web.servlet.TestDispatcherServlet.processHandlerException(TestDispatcherServlet.java:146) ~[spring-test-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1160) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1105) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.33.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:72) ~[spring-test-6.2.0.jar:6.2.0]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.33.jar:6.0]
+	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:165) ~[spring-test-6.2.0.jar:6.2.0]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:162) ~[spring-test-6.2.0.jar:6.2.0]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:162) ~[spring-test-6.2.0.jar:6.2.0]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:162) ~[spring-test-6.2.0.jar:6.2.0]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.2.0.jar:6.2.0]
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:201) ~[spring-test-6.2.0.jar:6.2.0]
+	at game.tictactoe.web.controller.GameControllerIntegrationTest.testCreateGameAndMakeFirstMove_NotValidGameFieldForPlayerX(GameControllerIntegrationTest.java:72) ~[test/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:767) ~[junit-platform-commons-1.11.3.jar:1.11.3]
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$8(TestMethodTestDescriptor.java:217) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:124) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:99) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:94) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:63) ~[na:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36) ~[na:na]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) ~[na:na]
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33) ~[na:na]
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92) ~[na:na]
+	at jdk.proxy2/jdk.proxy2.$Proxy6.stop(Unknown Source) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:200) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:132) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63) ~[na:na]
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56) ~[na:na]
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:121) ~[na:na]
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71) ~[na:na]
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69) ~[gradle-worker.jar:na]
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74) ~[gradle-worker.jar:na]
+Caused by: java.lang.ClassNotFoundException: game.tictactoe.web.model.ErrorResponse
+	... 117 common frames omitted
+
+2025-01-10T22:06:12.905Z  INFO 26539 --- [Test worker] g.t.web.controller.GameController        : Request received: POST /api/v1/game, GameCreationRequest = GameCreationRequest(playerSide=O, gameField=GameFieldDTO(gameField=[[ ,  ,  ], [ ,  ,  ], [ ,  ,  ]]))
+2025-01-10T22:06:12.905Z  INFO 26539 --- [Test worker] g.t.d.s.g.impl.GameServiceImpl           : Created game: Game(uuid=66447a3a-97b8-41be-a0bd-68c048df9a44, playerSide=O, gameField=GameField(fieldMatrix=[[EMPTY, EMPTY, EMPTY], [EMPTY, EMPTY, EMPTY], [EMPTY, X, EMPTY]]))
+2025-01-10T22:06:13.142Z  INFO 26539 --- [Test worker] g.t.web.controller.GameController        : Request received: PUT /api/v1/game/{uuid}, UUID = 66447a3a-97b8-41be-a0bd-68c048df9a44, NewGameField = GameFieldDTO(gameField=[[O,  ,  ], [ ,  ,  ], [ , X,  ]])
+2025-01-10T22:06:13.145Z  INFO 26539 --- [Test worker] g.t.web.controller.GameController        : Updated game: Game(uuid=66447a3a-97b8-41be-a0bd-68c048df9a44, playerSide=O, gameField=GameField(fieldMatrix=[[O, EMPTY, EMPTY], [EMPTY, EMPTY, EMPTY], [X, X, EMPTY]]))
+2025-01-10T22:06:13.160Z  INFO 26539 --- [Test worker] g.t.web.controller.GameController        : Request received: POST /api/v1/game, GameCreationRequest = GameCreationRequest(playerSide=O, gameField=GameFieldDTO(gameField=[[ ,  ,  ], [ ,  ,  ], [ ,  ,  ]]))
+2025-01-10T22:06:13.162Z  INFO 26539 --- [Test worker] g.t.d.s.g.impl.GameServiceImpl           : Created game: Game(uuid=544a8797-6554-44ab-af94-62f0f23c0c1e, playerSide=O, gameField=GameField(fieldMatrix=[[EMPTY, EMPTY, EMPTY], [EMPTY, EMPTY, EMPTY], [X, EMPTY, EMPTY]]))
+2025-01-10T22:06:13.168Z  INFO 26539 --- [Test worker] g.t.web.controller.GameController        : Request received: PUT /api/v1/game/{uuid}, UUID = 544a8797-6554-44ab-af94-62f0f23c0c1e, NewGameField = GameFieldDTO(gameField=[[ ,  ,  ], [ ,  ,  ], [ ,  ,  ]])
+2025-01-10T22:06:13.170Z  WARN 26539 --- [Test worker] .m.m.a.ExceptionHandlerExceptionResolver : Failure in @ExceptionHandler game.tictactoe.web.advice.TicTacToeExceptionHandler#handleInvalidRequestBodyException(InvalidRequestBodyException)
+
+java.lang.NoClassDefFoundError: game/tictactoe/web/model/ErrorResponse
+	at game.tictactoe.web.advice.TicTacToeExceptionHandler.handleInvalidRequestBodyException(TicTacToeExceptionHandler.java:45) ~[main/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.doResolveHandlerMethodException(ExceptionHandlerExceptionResolver.java:471) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodExceptionResolver.doResolveException(AbstractHandlerMethodExceptionResolver.java:73) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.resolveException(AbstractHandlerExceptionResolver.java:182) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.handler.HandlerExceptionResolverComposite.resolveException(HandlerExceptionResolverComposite.java:80) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.DispatcherServlet.processHandlerException(DispatcherServlet.java:1357) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.test.web.servlet.TestDispatcherServlet.processHandlerException(TestDispatcherServlet.java:146) ~[spring-test-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1160) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1105) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:925) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:593) ~[tomcat-embed-core-10.1.33.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:72) ~[spring-test-6.2.0.jar:6.2.0]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.33.jar:6.0]
+	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:165) ~[spring-test-6.2.0.jar:6.2.0]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:162) ~[spring-test-6.2.0.jar:6.2.0]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:162) ~[spring-test-6.2.0.jar:6.2.0]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:162) ~[spring-test-6.2.0.jar:6.2.0]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.2.0.jar:6.2.0]
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:201) ~[spring-test-6.2.0.jar:6.2.0]
+	at game.tictactoe.web.controller.GameControllerIntegrationTest.testUpdateGame_NotValidGameField(GameControllerIntegrationTest.java:236) ~[test/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:767) ~[junit-platform-commons-1.11.3.jar:1.11.3]
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$8(TestMethodTestDescriptor.java:217) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:124) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:99) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:94) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:63) ~[na:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36) ~[na:na]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) ~[na:na]
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33) ~[na:na]
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92) ~[na:na]
+	at jdk.proxy2/jdk.proxy2.$Proxy6.stop(Unknown Source) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:200) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:132) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63) ~[na:na]
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56) ~[na:na]
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:121) ~[na:na]
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71) ~[na:na]
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69) ~[gradle-worker.jar:na]
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74) ~[gradle-worker.jar:na]
+Caused by: java.lang.ClassNotFoundException: game.tictactoe.web.model.ErrorResponse
+	... 117 common frames omitted
+
+2025-01-10T22:06:13.206Z  WARN 26539 --- [Test worker] .m.m.a.ExceptionHandlerExceptionResolver : Failure in @ExceptionHandler game.tictactoe.web.advice.TicTacToeExceptionHandler#handleMethodArgumentNotValidException(MethodArgumentNotValidException)
+
+java.lang.NoClassDefFoundError: game/tictactoe/web/model/ErrorResponse
+	at game.tictactoe.web.advice.TicTacToeExceptionHandler.handleMethodArgumentNotValidException(TicTacToeExceptionHandler.java:64) ~[main/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.doResolveHandlerMethodException(ExceptionHandlerExceptionResolver.java:471) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodExceptionResolver.doResolveException(AbstractHandlerMethodExceptionResolver.java:73) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.resolveException(AbstractHandlerExceptionResolver.java:182) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.handler.HandlerExceptionResolverComposite.resolveException(HandlerExceptionResolverComposite.java:80) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.DispatcherServlet.processHandlerException(DispatcherServlet.java:1357) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.test.web.servlet.TestDispatcherServlet.processHandlerException(TestDispatcherServlet.java:146) ~[spring-test-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1160) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1105) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.33.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:72) ~[spring-test-6.2.0.jar:6.2.0]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.33.jar:6.0]
+	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:165) ~[spring-test-6.2.0.jar:6.2.0]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:162) ~[spring-test-6.2.0.jar:6.2.0]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:162) ~[spring-test-6.2.0.jar:6.2.0]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:162) ~[spring-test-6.2.0.jar:6.2.0]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.2.0.jar:6.2.0]
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:201) ~[spring-test-6.2.0.jar:6.2.0]
+	at game.tictactoe.web.controller.GameControllerIntegrationTest.testCreateGameAndMakeFirstMove_NotValidPlayerSideInBody(GameControllerIntegrationTest.java:126) ~[test/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:767) ~[junit-platform-commons-1.11.3.jar:1.11.3]
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$8(TestMethodTestDescriptor.java:217) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:124) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:99) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:94) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:63) ~[na:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36) ~[na:na]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) ~[na:na]
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33) ~[na:na]
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92) ~[na:na]
+	at jdk.proxy2/jdk.proxy2.$Proxy6.stop(Unknown Source) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:200) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:132) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63) ~[na:na]
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56) ~[na:na]
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:121) ~[na:na]
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71) ~[na:na]
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69) ~[gradle-worker.jar:na]
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74) ~[gradle-worker.jar:na]
+Caused by: java.lang.ClassNotFoundException: game.tictactoe.web.model.ErrorResponse
+	... 117 common frames omitted
+
+2025-01-10T22:06:13.218Z  WARN 26539 --- [Test worker] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<game.tictactoe.web.model.MoveResultDto> game.tictactoe.web.controller.GameController.createGameAndMakeFirstMove(game.tictactoe.web.model.GameCreationRequest): [Field error in object 'gameCreationRequest' on field 'playerSide': rejected value [E]; codes [Pattern.gameCreationRequest.playerSide,Pattern.playerSide,Pattern.java.lang.Character,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [gameCreationRequest.playerSide,playerSide]; arguments []; default message [playerSide],[Ljakarta.validation.constraints.Pattern$Flag;@2bbadc1,[XO]]; default message [Invalid player side, it should be 'X' or 'O']] ]
+2025-01-10T22:06:13.258Z  INFO 26539 --- [Test worker] g.t.web.controller.GameController        : Request received: POST /api/v1/game, GameCreationRequest = GameCreationRequest(playerSide=O, gameField=GameFieldDTO(gameField=[[ ,  ,  ], [ ,  ,  ], [ ,  ,  ]]))
+2025-01-10T22:06:13.259Z  INFO 26539 --- [Test worker] g.t.d.s.g.impl.GameServiceImpl           : Created game: Game(uuid=4a2bec8c-3980-4fc2-813b-6a6585820884, playerSide=O, gameField=GameField(fieldMatrix=[[EMPTY, EMPTY, EMPTY], [EMPTY, EMPTY, X], [EMPTY, EMPTY, EMPTY]]))
+2025-01-10T22:06:13.445Z  INFO 26539 --- [Test worker] g.t.web.controller.GameController        : Request received: PUT /api/v1/game/{uuid}, UUID = 8cdb1b2a-9b3c-4952-ae70-1ae52bf79403, NewGameField = GameFieldDTO(gameField=[[ ,  ,  ], [ , X,  ], [ ,  ,  ]])
+2025-01-10T22:06:13.446Z  INFO 26539 --- [Test worker] g.t.web.controller.GameController        : Updated game: Game(uuid=8cdb1b2a-9b3c-4952-ae70-1ae52bf79403, playerSide=X, gameField=GameField(fieldMatrix=[[O, EMPTY, EMPTY], [EMPTY, X, EMPTY], [EMPTY, EMPTY, EMPTY]]))
+2025-01-10T22:06:13.451Z  INFO 26539 --- [Test worker] g.t.web.controller.GameController        : Request received: POST /api/v1/game, GameCreationRequest = GameCreationRequest(playerSide=O, gameField=GameFieldDTO(gameField=[[ ,  ,  ], [ ,  ,  ], [ ,  ,  ]]))
+2025-01-10T22:07:30.817Z  INFO 27268 --- [Test worker] g.t.w.c.GameControllerIntegrationTest    : Starting GameControllerIntegrationTest using Java 23.0.1 with PID 27268 (started by gearhead in /home/gearhead/Projects/new_bootcamp/AP1_Jv_T03-1/src/TicTacToe)
+2025-01-10T22:07:30.821Z  INFO 27268 --- [Test worker] g.t.w.c.GameControllerIntegrationTest    : No active profile set, falling back to 1 default profile: "default"
+2025-01-10T22:07:32.382Z  INFO 27268 --- [Test worker] .i.s.PathMatchingResourcePatternResolver : Skipping search for files matching pattern [**/*.class]: directory [/home/gearhead/Projects/new_bootcamp/AP1_Jv_T03-1/src/TicTacToe/build/classes/java/test/game/tictactoe/application] does not exist
+2025-01-10T22:07:32.638Z  INFO 27268 --- [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-01-10T22:07:32.639Z  INFO 27268 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-01-10T22:07:32.641Z  INFO 27268 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-01-10T22:07:32.689Z  INFO 27268 --- [Test worker] g.t.w.c.GameControllerIntegrationTest    : Started GameControllerIntegrationTest in 2.235 seconds (process running for 5.317)
+2025-01-10T22:07:33.346Z  INFO 27268 --- [Test worker] g.t.web.controller.GameController        : Request received: PUT /api/v1/game/{uuid}, UUID = 00000000-0000-0000-0000-00000000ffff, NewGameField = GameFieldDTO(gameField=[[O,  ,  ], [ ,  ,  ], [ ,  ,  ]])
+2025-01-10T22:07:33.439Z  INFO 27268 --- [Test worker] g.t.web.controller.GameController        : Request received: POST /api/v1/game, GameCreationRequest = GameCreationRequest(playerSide=O, gameField=GameFieldDTO(gameField=[[O,  ,  ], [ ,  ,  ], [ ,  ,  ]]))
+2025-01-10T22:07:33.467Z  INFO 27268 --- [Test worker] g.t.web.controller.GameController        : Request received: POST /api/v1/game, GameCreationRequest = GameCreationRequest(playerSide=X, gameField=GameFieldDTO(gameField=[[ ,  ,  ], [ ,  ,  ], [ ,  ,  ]]))
+2025-01-10T22:07:33.479Z  INFO 27268 --- [Test worker] g.t.web.controller.GameController        : Request received: POST /api/v1/game, GameCreationRequest = GameCreationRequest(playerSide=O, gameField=GameFieldDTO(gameField=[[ ,  ,  ], [ ,  ,  ], [ ,  ,  ]]))
+2025-01-10T22:07:33.480Z  INFO 27268 --- [Test worker] g.t.d.s.g.impl.GameServiceImpl           : Created game: Game(uuid=c48d84c7-fc4d-411e-b963-edc62fe262af, playerSide=O, gameField=GameField(fieldMatrix=[[EMPTY, EMPTY, X], [EMPTY, EMPTY, EMPTY], [EMPTY, EMPTY, EMPTY]]))
+2025-01-10T22:07:33.563Z  INFO 27268 --- [Test worker] g.t.web.controller.GameController        : Request received: PUT /api/v1/game/{uuid}, UUID = c48d84c7-fc4d-411e-b963-edc62fe262af, NewGameField = GameFieldDTO(gameField=[[O,  , X], [ ,  ,  ], [ ,  ,  ]])
+2025-01-10T22:07:33.564Z  INFO 27268 --- [Test worker] g.t.web.controller.GameController        : Updated game: Game(uuid=c48d84c7-fc4d-411e-b963-edc62fe262af, playerSide=O, gameField=GameField(fieldMatrix=[[O, EMPTY, X], [EMPTY, EMPTY, X], [EMPTY, EMPTY, EMPTY]]))
+2025-01-10T22:07:33.574Z  INFO 27268 --- [Test worker] g.t.web.controller.GameController        : Request received: POST /api/v1/game, GameCreationRequest = GameCreationRequest(playerSide=O, gameField=GameFieldDTO(gameField=[[ ,  ,  ], [ ,  ,  ], [ ,  ,  ]]))
+2025-01-10T22:07:33.574Z  INFO 27268 --- [Test worker] g.t.d.s.g.impl.GameServiceImpl           : Created game: Game(uuid=eeef6c3b-44f2-405f-9eec-9ccf79983b66, playerSide=O, gameField=GameField(fieldMatrix=[[EMPTY, EMPTY, EMPTY], [X, EMPTY, EMPTY], [EMPTY, EMPTY, EMPTY]]))
+2025-01-10T22:07:33.580Z  INFO 27268 --- [Test worker] g.t.web.controller.GameController        : Request received: PUT /api/v1/game/{uuid}, UUID = eeef6c3b-44f2-405f-9eec-9ccf79983b66, NewGameField = GameFieldDTO(gameField=[[ ,  ,  ], [ ,  ,  ], [ ,  ,  ]])
+2025-01-10T22:07:33.606Z  INFO 27268 --- [Test worker] g.t.web.controller.GameController        : Request received: POST /api/v1/game, GameCreationRequest = GameCreationRequest(playerSide=O, gameField=GameFieldDTO(gameField=[[ ,  ,  ], [ ,  ,  ], [ ,  ,  ]]))
+2025-01-10T22:07:33.607Z  INFO 27268 --- [Test worker] g.t.d.s.g.impl.GameServiceImpl           : Created game: Game(uuid=82ae5a3d-abaa-4042-a829-23ba89262551, playerSide=O, gameField=GameField(fieldMatrix=[[EMPTY, X, EMPTY], [EMPTY, EMPTY, EMPTY], [EMPTY, EMPTY, EMPTY]]))
+2025-01-10T22:07:33.722Z  INFO 27268 --- [Test worker] g.t.web.controller.GameController        : Request received: PUT /api/v1/game/{uuid}, UUID = 4481d124-4b79-4dbf-b00a-7c161ea706ed, NewGameField = GameFieldDTO(gameField=[[ ,  ,  ], [ , X,  ], [ ,  ,  ]])
+2025-01-10T22:07:33.722Z  INFO 27268 --- [Test worker] g.t.web.controller.GameController        : Updated game: Game(uuid=4481d124-4b79-4dbf-b00a-7c161ea706ed, playerSide=X, gameField=GameField(fieldMatrix=[[O, EMPTY, EMPTY], [EMPTY, X, EMPTY], [EMPTY, EMPTY, EMPTY]]))
+2025-01-10T22:07:33.728Z  INFO 27268 --- [Test worker] g.t.web.controller.GameController        : Request received: POST /api/v1/game, GameCreationRequest = GameCreationRequest(playerSide=O, gameField=GameFieldDTO(gameField=[[ ,  ,  ], [ ,  ,  ], [ ,  ,  ]]))
+2025-01-10T22:08:12.516Z  INFO 27748 --- [Test worker] g.t.w.c.GameControllerIntegrationTest    : Starting GameControllerIntegrationTest using Java 23.0.1 with PID 27748 (started by gearhead in /home/gearhead/Projects/new_bootcamp/AP1_Jv_T03-1/src/TicTacToe)
+2025-01-10T22:08:12.518Z  INFO 27748 --- [Test worker] g.t.w.c.GameControllerIntegrationTest    : No active profile set, falling back to 1 default profile: "default"
+2025-01-10T22:08:14.535Z  INFO 27748 --- [Test worker] .i.s.PathMatchingResourcePatternResolver : Skipping search for files matching pattern [**/*.class]: directory [/home/gearhead/Projects/new_bootcamp/AP1_Jv_T03-1/src/TicTacToe/build/classes/java/test/game/tictactoe/application] does not exist
+2025-01-10T22:08:14.868Z  INFO 27748 --- [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-01-10T22:08:14.869Z  INFO 27748 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-01-10T22:08:14.870Z  INFO 27748 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-01-10T22:08:14.915Z  INFO 27748 --- [Test worker] g.t.w.c.GameControllerIntegrationTest    : Started GameControllerIntegrationTest in 2.811 seconds (process running for 7.732)
+2025-01-10T22:08:15.194Z  INFO 27748 --- [Test worker] g.t.web.controller.GameController        : Request received: PUT /api/v1/game/{uuid}, UUID = 00000000-0000-0000-0000-00000000ffff, NewGameField = GameFieldDTO(gameField=[[O,  ,  ], [ ,  ,  ], [ ,  ,  ]])
+2025-01-10T22:08:15.265Z  INFO 27748 --- [Test worker] g.t.web.controller.GameController        : Request received: POST /api/v1/game, GameCreationRequest = GameCreationRequest(playerSide=O, gameField=GameFieldDTO(gameField=[[O,  ,  ], [ ,  ,  ], [ ,  ,  ]]))
+2025-01-10T22:08:15.302Z  INFO 27748 --- [Test worker] g.t.web.controller.GameController        : Request received: POST /api/v1/game, GameCreationRequest = GameCreationRequest(playerSide=X, gameField=GameFieldDTO(gameField=[[ ,  ,  ], [ ,  ,  ], [ ,  ,  ]]))
+2025-01-10T22:08:15.313Z  INFO 27748 --- [Test worker] g.t.web.controller.GameController        : Request received: POST /api/v1/game, GameCreationRequest = GameCreationRequest(playerSide=O, gameField=GameFieldDTO(gameField=[[ ,  ,  ], [ ,  ,  ], [ ,  ,  ]]))
+2025-01-10T22:08:15.314Z  INFO 27748 --- [Test worker] g.t.d.s.g.impl.GameServiceImpl           : Created game: Game(uuid=f8fa1cf0-8323-41a1-8240-31da2847e744, playerSide=O, gameField=GameField(fieldMatrix=[[EMPTY, EMPTY, EMPTY], [EMPTY, EMPTY, X], [EMPTY, EMPTY, EMPTY]]))
+2025-01-10T22:08:15.404Z  INFO 27748 --- [Test worker] g.t.web.controller.GameController        : Request received: PUT /api/v1/game/{uuid}, UUID = f8fa1cf0-8323-41a1-8240-31da2847e744, NewGameField = GameFieldDTO(gameField=[[O,  ,  ], [ ,  , X], [ ,  ,  ]])
+2025-01-10T22:08:15.407Z  INFO 27748 --- [Test worker] g.t.web.controller.GameController        : Updated game: Game(uuid=f8fa1cf0-8323-41a1-8240-31da2847e744, playerSide=O, gameField=GameField(fieldMatrix=[[O, EMPTY, X], [EMPTY, EMPTY, X], [EMPTY, EMPTY, EMPTY]]))
+2025-01-10T22:08:15.424Z  INFO 27748 --- [Test worker] g.t.web.controller.GameController        : Request received: POST /api/v1/game, GameCreationRequest = GameCreationRequest(playerSide=O, gameField=GameFieldDTO(gameField=[[ ,  ,  ], [ ,  ,  ], [ ,  ,  ]]))
+2025-01-10T22:08:15.425Z  INFO 27748 --- [Test worker] g.t.d.s.g.impl.GameServiceImpl           : Created game: Game(uuid=45c7a50b-e4ba-4ea6-90d0-77147fa6a203, playerSide=O, gameField=GameField(fieldMatrix=[[EMPTY, EMPTY, EMPTY], [EMPTY, EMPTY, EMPTY], [EMPTY, X, EMPTY]]))
+2025-01-10T22:08:15.431Z  INFO 27748 --- [Test worker] g.t.web.controller.GameController        : Request received: PUT /api/v1/game/{uuid}, UUID = 45c7a50b-e4ba-4ea6-90d0-77147fa6a203, NewGameField = GameFieldDTO(gameField=[[ ,  ,  ], [ ,  ,  ], [ ,  ,  ]])
+2025-01-10T22:08:15.472Z  INFO 27748 --- [Test worker] g.t.web.controller.GameController        : Request received: POST /api/v1/game, GameCreationRequest = GameCreationRequest(playerSide=O, gameField=GameFieldDTO(gameField=[[ ,  ,  ], [ ,  ,  ], [ ,  ,  ]]))
+2025-01-10T22:08:15.472Z  INFO 27748 --- [Test worker] g.t.d.s.g.impl.GameServiceImpl           : Created game: Game(uuid=64d65963-ee6f-4fe0-b249-501644ba2d72, playerSide=O, gameField=GameField(fieldMatrix=[[EMPTY, EMPTY, EMPTY], [X, EMPTY, EMPTY], [EMPTY, EMPTY, EMPTY]]))
+2025-01-10T22:08:15.617Z  INFO 27748 --- [Test worker] g.t.web.controller.GameController        : Request received: PUT /api/v1/game/{uuid}, UUID = 658340d0-2ac2-4f01-92a6-e41f28de9a29, NewGameField = GameFieldDTO(gameField=[[ ,  ,  ], [ , X,  ], [ ,  ,  ]])
+2025-01-10T22:08:15.618Z  INFO 27748 --- [Test worker] g.t.web.controller.GameController        : Updated game: Game(uuid=658340d0-2ac2-4f01-92a6-e41f28de9a29, playerSide=X, gameField=GameField(fieldMatrix=[[O, EMPTY, EMPTY], [EMPTY, X, EMPTY], [EMPTY, EMPTY, EMPTY]]))
+2025-01-10T22:08:15.623Z  INFO 27748 --- [Test worker] g.t.web.controller.GameController        : Request received: POST /api/v1/game, GameCreationRequest = GameCreationRequest(playerSide=O, gameField=GameFieldDTO(gameField=[[ ,  ,  ], [ ,  ,  ], [ ,  ,  ]]))
